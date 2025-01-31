@@ -5,7 +5,13 @@
 //====================================//
 
 
-
+class Usuario {
+    constructor(id, usuario, senha){
+        this.id = id;
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+}
 
 class Cliente {
     constructor(id, nome, endereco, telefone) {
