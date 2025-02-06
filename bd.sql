@@ -48,3 +48,4 @@ CREATE TABLE Pedido_Pizza (
     FOREIGN KEY (pedido_id) REFERENCES Pedido(id),
     FOREIGN KEY (pizza_id) REFERENCES Pizza(id)
 );
+
