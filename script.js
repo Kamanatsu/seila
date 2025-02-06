@@ -5,6 +5,13 @@
 //====================================//
 
 
+
+
+//====================================//
+// 1 - CLASSES                        //
+//====================================//
+
+
 class Usuario {
     constructor(id, usuario, senha){
         this.id = id;
@@ -53,4 +60,16 @@ class Atendente {
         this.nome = nome;
         this.funcao = funcao;
     }
+}
+
+
+//====================================//
+// 2 - INTERAÇÃO COM O BANCO DE DADOS //
+//====================================//
+
+function login() {
+    // var username = document.getElementById('username').value;
+    // var password = document.getElementById('password').value;
+
+    window.location.href = 'tela_principal.html';
 }

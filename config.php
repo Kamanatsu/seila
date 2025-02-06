@@ -1,7 +1,7 @@
 <?php
     $user = 'root';
     $pass = '';
-    $db = 'Pizzaria';
+    $db = 'bd';
     $host = 'localhost';
  
     $mysqli = new mysqli($host, $user, $pass, $db);
