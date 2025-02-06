@@ -1,0 +1,124 @@
+/* Resetando o estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://pizzariasaopedro.com.br/wp-content/uploads/2024/04/pizzaria-sao-pedro-no-ifood.png') no-repeat center center fixed; /* Nova imagem de fundo */
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Cabeçalho */
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container principal */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.5); /* Mais transparência (valor 0.5) */
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px); /* Filtro de desfoque para suavizar o fundo */
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #f1c40f; /* Cor amarela, lembrando o queijo da pizza */
+    outline: none;
+    background-color: #fff;
+}
+
+/* Estilos do botão de submit */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #e67e22; /* Cor alaranjada que remete ao molho de tomate */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #d35400;
+}
+
+/* Link de cadastro */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: #f1c40f; /* Amarelo, como queijo */
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #d35400; /* Laranja intenso, como o molho */
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+    }
+}
