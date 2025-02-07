@@ -55,9 +55,11 @@ if (isset ($_POST["adicionar_pedido"])){
     $preco = ($tamanho == "Pequena") ? 25.00 :
     (($tamanho == "Média") ? 35.00 : 45.00);
 
-    $valor_total = $valor_total + $preco;
+    
 
     $quantidade = $mysqli->real_escape_string($_POST["quantidade"]);
+
+    $valor_total = $valor_total + ((int)$quantidade * $preco);
 
     $id = $_SESSION['ultimo_id'];
 
