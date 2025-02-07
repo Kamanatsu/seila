@@ -49,4 +49,3 @@ CREATE TABLE Pedido_Pizza (
     FOREIGN KEY (pizza_id) REFERENCES Pizza(id)
 );
 
-INSERT INTO `Usuario`(`username`, `senha`) VALUES (`ademiro`, `1234`)
