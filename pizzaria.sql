@@ -32,18 +32,6 @@ CREATE TABLE `pizza` (
 INSERT INTO `usuario` (`id`, `username`, `senha`) VALUES
 (1, 'ademiro', '1234');
 
-
-ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
-
---
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
